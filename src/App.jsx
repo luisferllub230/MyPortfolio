@@ -1,13 +1,18 @@
 import { useState } from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import './public/assets/Css/styles.min.css'
+import Header from './components/Header'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <motion.div className=""></motion.div>
+      <header>
+        <Header
+          
+        />
+      </header>
     </div>
   )
 }
