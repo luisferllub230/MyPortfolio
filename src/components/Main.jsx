@@ -3,7 +3,7 @@ import React, {Fragment}from 'react'
 const Main = () => {
     return ( 
         <Fragment>
-            <section>
+            {/* <section>
                 <div className="container-main">
                     <div className="main">
                         <h1> {"Console.log('Luis Fernandez')"} </h1>
@@ -17,7 +17,7 @@ const Main = () => {
                     <div className="main"></div>
                     <div className="main"></div>
                 </div>
-            </section>
+            </section> */}
         </Fragment>
      );
 }
