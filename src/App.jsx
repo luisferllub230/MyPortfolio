@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
-import './public/assets/Css/styles.min.css'
 import Header from './components/Header'
+import Main from './components/Main'
 
 
 function App() {
@@ -10,9 +9,14 @@ function App() {
     <div className="App">
       <header>
         <Header
-          
+
         />
       </header>
+      <main>
+        <Main
+
+        />
+      </main>
     </div>
   )
 }
