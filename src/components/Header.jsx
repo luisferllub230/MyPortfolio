@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 
+
 const Header = () => {
 
     const [active, setActive] = useState([false, false, false, false]);
@@ -8,13 +9,13 @@ const Header = () => {
     return (
         <Fragment>
             <section>
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
                         <a
                             className="navbar-brand text-light fs-3 fw-bolder"
                             href="#"
 
-                        >{"Print('Luis Fernandez')"}</a>
+                        >{"Print('LF')"}</a>
 
                         <button className="navbar-toggler white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -30,9 +31,6 @@ const Header = () => {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Skills</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                                 </li>
                             </ul>
                         </div>

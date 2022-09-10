@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import Header from './components/Header'
 import Main from './components/Main'
 
@@ -12,7 +11,7 @@ function App() {
 
         />
       </header>
-      <main>
+      <main className="container">
         <Main
 
         />
