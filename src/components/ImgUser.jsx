@@ -5,9 +5,9 @@ const ImageUser = () => {
     return (
         <Fragment>
             <motion.div
+                initial={{scale:0.9}}
                 animate={{
-                    scale: [1, 1.5, 1.5, 1, 1],
-                    rotate: [360, 360, 360, 360, 0],
+                    scale: [1, 1.2, 1.2, 1, 1],
                     borderRadius: ["20%", "30%", "50%", "20%", "50%"]
                 }}
                 transition={{ duration: 1.5 }}

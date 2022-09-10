@@ -4,30 +4,33 @@ import Type from 'react-typed'
 import "../public/styles.css"
 import ImageUser from './ImgUser'
 import IconBackGround from './IconBackGround'
+import Figure from './Figures'
 
 const Main = () => {
-
-    const icons = ["devicon-react-original-wordmark colored", "devicon-nodejs-plain colored", "devicon-express-original-wordmark colored", "devicon-javascript-plain colored", "devicon-html5-plain-wordmark colored", "devicon-sass-original colored", "devicon-css3-plain-wordmark colored", "devicon-bootstrap-plain-wordmark colored"]
-
     return (
         <Fragment>
             <section>
-                <div className="row text-white">
+                <div className="row text-white a">
                     <div className="col-12 col-md-12 page-initial">
-                        <ImageUser/>
-                        <h1 className='text-center ps-2'>
+                        <ImageUser />
+                        <h1 className='text-center ps-2 border-bottom border-success border-5 pb-2'>
                             <Type
                                 className='text-center'
                                 strings={['LuisFerllub230']}
                                 typeSpeed={500}
                             />
                         </h1>
+                        <br />
+                        <IconBackGround
+                        />
+                        <Figure
+                        />  
                     </div>
+                    <div className='page-initial col-12'>
+                        <div className='bg-danger '>
 
-                    <IconBackGround
-                        icons = {icons}
-                    />
-
+                        </div>
+                    </div>
                 </div>
             </section>
         </Fragment>

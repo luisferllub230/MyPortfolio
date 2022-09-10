@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <Fragment>
             <section>
-                <nav className="navbar navbar-expand-lg navbar-dark">
+                <nav className="navbar navbar-expand-lg navbar-dark border-bottom border-5 border-danger">
                     <div className="container-fluid">
                         <a
                             className="navbar-brand text-light fs-3 fw-bolder"
