@@ -27,7 +27,7 @@ const IconBackGround = () => {
             initial: { x: -25, y: -800, opacity: 0.9 },
             animate: { x: -25, y: -10, opacity: 1 },
             transition: { delay: 0.5, duration: 4,},
-            style: { fontSize: "5rem", color: "#000", }
+            style: { fontSize: "5rem", color: "white", }
         },
         {
             nameIcon: "javascript",

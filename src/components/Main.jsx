@@ -26,29 +26,28 @@ const Main = () => {
                         <Figure
                         />
                     </div>
-                    <div className='howIam-container col-12'>
-                        <div className='bg-danger howIam'>
-                            <motion.div
-                                className='howIam-inside bg-dark'
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1, y: [50, 0] }}
-                                viewport={{ one: true }}
-                            >
-                                <div className=''>
-                                    <h1 className='text-center text-white'>How I am?</h1>
-                                    <p className='text-start mt-5'>
-                                        <Type
-                                            className='text-center'
-                                            strings={['Hi im Luis Alejandro Fernandez Lluberes.<br/><br/> Im a Junior Software Developer, i like to learn new things and i like to work in a team. at the moment im learning Web Development and i want to be a Full Stack Developer.']}
-                                            typeSpeed={50}
-                                        />
-                                    </p>
-                                    <div className='text-end'>
-                                        <a href="">If like more about me CLICK HERE</a>
-                                    </div>
+                    <div className='howIam-container col-12 mt-5 mt-2'>
+                        <div className='howIam bg-danger'></div>
+                        <motion.div
+                            className='howIam-inside bg-dark'
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, y: [50, 0] }}
+                            viewport={{ one: true }}
+                        >
+                            <div className=''>
+                                <h1 className='text-center text-white'>How I am?</h1>
+                                <p className='text-start mt-5'>
+                                    <Type
+                                        className='text-center'
+                                        strings={['Hi im Luis Alejandro Fernandez Lluberes.<br/><br/> Im a Junior Software Developer, i like to learn new things and i like to work in a team. at the moment im learning Web Development and i want to be a Full Stack Developer.']}
+                                        typeSpeed={50}
+                                    />
+                                </p>
+                                <div className='text-end'>
+                                    <a href="">If like more about me CLICK HERE</a>
                                 </div>
-                            </motion.div>
-                        </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -1,16 +1,18 @@
 /* *************************for pages************************* */
 .page-initial{
-    height: 100vh;
     width: 100vw;
+    min-height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
+    position: relative;
+    margin-bottom: 4rem;
 }
 
 
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 768px) {
     .howIam-container{
         height: 100vh;
         width: 100vw;
@@ -19,33 +21,33 @@
         align-items: center;
         flex-direction: column;
         padding-top: 2rem;
+        position: relative;
     }
     
     .howIam{
-        height: 100vh;
-        width: 100vw;
+        position: absolute;
         width: 90%;
         height: 15%;
-        font-size: 1rem;
-        font-weight: 200;
-        color: #fff;
+        top: 0;
         border-radius: 10px;
+        padding: 1rem;
     }
     
     .howIam-inside{
-        width: 75%;
-        padding: 1rem;
         position: absolute;
-        top: 50rem;
-        left: 12.5%;
+        width: 70%;
+        top: 5%;
+        left: 15%;
         border-radius: 10px;
         border: white solid 2px;
+        padding: 1rem;
     }
 
 }
 
 @media screen and (min-width: 768px){
     .howIam-container{
+        padding: 3rem;
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -53,27 +55,25 @@
         align-items: center;
         flex-direction: column;
         padding-top: 8rem;
+        position: relative;
     }
     
     .howIam{
-        height: 100vh;
-        width: 100vw;
+        position: absolute;
         width: 90%;
-        height: 20%;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #fff;
+        height: 15%;
+        top: 0;
         border-radius: 10px;
     }
     
     .howIam-inside{
-        width: 70%;
-        padding: 1%;
         position: absolute;
-        top: 53rem;
+        width: 70%;
+        top: 5%;
         left: 15%;
         border-radius: 10px;
         border: white solid 2px;
+        padding: 1rem;
     }
 }
 
@@ -81,14 +81,13 @@
 /* *************************for image user************************* */
 
 @media screen and (max-width: 768px) {
-    
     .img-box{
         width: 100%;
         height: 100%;
-        min-width: 10rem;
-        max-width: 10rem;
-        min-height: 10rem;
-        max-height: 10rem;
+        min-width: 15rem;
+        max-width: 15rem;
+        min-height: 15rem;
+        max-height: 15rem;
     }
 }
     
@@ -112,6 +111,7 @@
 /*  *************************for icons************************* */
 i{
     position: absolute;
+    top: 80%;
     left: 50%;
     font-size: 50px;
 }
@@ -123,7 +123,7 @@ i{
 
 /* *************************for figures***************************  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .rectangle1{
         width: 5%;
         height: 7%;
@@ -150,17 +150,16 @@ i{
         display: block;
     }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
 
     .rectangle1{
         width: 5%;
-        height: 40%;
+        height: 35%;
         border-radius: 33px;
         padding: 20px;
         margin-bottom: 20px;
         position: absolute;
-        left: 80%;
+        left: 90%;
         top:25%;
         display: block;
         border:rgb(31, 31, 31) 1px solid;
@@ -168,12 +167,12 @@ i{
 
     .rectangle2{
         width: 5%;
-        height: 40%;
+        height: 35%;
         border-radius: 33px;
         padding: 20px;
         margin-bottom: 20px;
         position: absolute;
-        left: 5%;
+        left: 3%;
         top:25%;
         display: block;
         border:rgb(31, 31, 31) 1px solid;
@@ -193,6 +192,8 @@ i{
     }
 }
 
+
+/* *************others************ */
 a{
     text-decoration: none;
     color: #fff;
