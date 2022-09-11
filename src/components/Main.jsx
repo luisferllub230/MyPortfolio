@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
-import { motion } from 'framer-motion'
 import Type from 'react-typed'
 import "../public/styles.css"
 import ImageUser from './ImgUser'
 import IconBackGround from './IconBackGround'
 import Figure from './Figures'
 import HowIam from './HowIam'
+import Project from './Project'
 
 const Main = () => {
     return (
@@ -27,9 +27,12 @@ const Main = () => {
                         <Figure
                         />
                     </div>
-                    <div className='howIam-container col-12 mt-5 mt-2'>
+                    <div className='howIam-container col-12 mt-5'>
                         <HowIam
                         />
+                    </div>
+                    <div className='Project-container'>
+                        <Project/>
                     </div>
                 </div>
             </section>

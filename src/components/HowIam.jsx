@@ -11,7 +11,7 @@ const HowIam = () => {
                 className='howIam-inside'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, y: [50, 0] }}
-                viewport={{ one: true }}
+                viewport={{ once: true}}
             >
                 <div className=''>
                     <h1 className='text-center'>How I am?</h1>
