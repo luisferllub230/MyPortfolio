@@ -13,9 +13,7 @@ const Main = () => {
             <section>
                 <div className="row">
                     <div className="col-12 col-md-12 page-initial">
-
                         <ImageUser />
-
                         <h1 className='text-center ps-2 pb-2'>
                             <Type
                                 className='text-center'
@@ -23,20 +21,15 @@ const Main = () => {
                                 typeSpeed={500}
                             />
                         </h1>
-
                         <br />
-
                         <IconBackGround
                         />
                         <Figure
                         />
-
                     </div>
                     <div className='howIam-container col-12 mt-5 mt-2'>
-
                         <HowIam
                         />
-
                     </div>
                 </div>
             </section>
