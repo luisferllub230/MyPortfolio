@@ -137,7 +137,7 @@ body{
 }
 
 /*  *************************for icons************************* */
-i{
+.page-initial i{
     position: absolute;
     top: 80%;
     left: 50%;
@@ -148,6 +148,11 @@ i{
     display: block;
 }
 
+i{
+    color: var(--color-tertiary);
+    font-size: 30px;
+    margin: 0 10px;
+}
 
 /* *************************for figures***************************  */
 
@@ -230,7 +235,7 @@ a{
     color: var(--color-tertiary);
     font-size: small;
 }
-a:hover{
+nav a:hover{
     color: var(--color-quaternary);
     border-bottom: 1px solid var(--color-secondary);
     text-decoration: none;
