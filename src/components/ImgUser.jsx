@@ -11,7 +11,7 @@ const ImageUser = () => {
                     borderRadius: ["20%", "30%", "50%", "20%", "50%"]
                 }}
                 transition={{ duration: 1.5 }}
-                className='img-box bg-danger p-3 border border-dark shadow-style'
+                className='img-box p-3 shadow-style'
             >
                 <motion.img
                     initial={{ y: 0 }}

@@ -10,10 +10,10 @@ const Main = () => {
     return (
         <Fragment>
             <section>
-                <div className="row text-white a">
+                <div className="row">
                     <div className="col-12 col-md-12 page-initial">
                         <ImageUser />
-                        <h1 className='text-center ps-2 border-bottom border-success border-5 pb-2'>
+                        <h1 className='text-center ps-2 pb-2'>
                             <Type
                                 className='text-center'
                                 strings={['LuisFerllub230']}
@@ -27,15 +27,15 @@ const Main = () => {
                         />
                     </div>
                     <div className='howIam-container col-12 mt-5 mt-2'>
-                        <div className='howIam bg-danger'></div>
+                        <div className='howIam'></div>
                         <motion.div
-                            className='howIam-inside bg-dark'
+                            className='howIam-inside'
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1, y: [50, 0] }}
                             viewport={{ one: true }}
                         >
                             <div className=''>
-                                <h1 className='text-center text-white'>How I am?</h1>
+                                <h1 className='text-center'>How I am?</h1>
                                 <p className='text-start mt-5'>
                                     <Type
                                         className='text-center'
@@ -44,7 +44,7 @@ const Main = () => {
                                     />
                                 </p>
                                 <div className='text-end'>
-                                    <a href="">If like more about me CLICK HERE</a>
+                                    <a href="" target="_blank">If like more about me CLICK HERE</a>
                                 </div>
                             </div>
                         </motion.div>
