@@ -5,6 +5,17 @@ import SkillsCarousel from './SkillCarousel'
 
 const Project = () => {
 
+    const ObjectProject = [{
+        img: '',
+        title: '',
+        description: '',
+        skills: [],
+        demo: '',
+        github: '',
+        authors: []
+
+    }]
+
     const [select, setSelect] = useState([
         true,
         false,
@@ -45,7 +56,7 @@ const Project = () => {
 
                 </div>
                 <div className="col-12 col-md-12 box-container">
-
+                    lorem*24
                 </div>
             </div>
         </Fragment>

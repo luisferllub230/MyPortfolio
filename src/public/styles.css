@@ -1,208 +1,224 @@
 /* root variables */
 :root {
   --color-primary: #181818;
-  --color-secondary: #8758FF;
-  --color-tertiary: #F2F2F2;
-  --color-quaternary: #F5F0BB;
+  --color-secondary: #8758ff;
+  --color-tertiary: #f2f2f2;
+  --color-quaternary: #f5f0bb;
 }
 
-body{
-    background-color: var(--color-primary);
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-tertiary);
+body {
+  background-color: var(--color-primary);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-tertiary);
 }
-
 
 /* *************************for pages************************* */
-.page-initial{
-    width: 100vw;
-    min-height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+.page-initial {
+  width: 100vw;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
-
-
 
 @media screen and (max-width: 768px) {
-    .howIam-container{
-        
-        width: 100%;
-        height: 25rem;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 8rem;
-    }
-    
-    .howIam{
-        position: absolute;
-        width: 90%;
-        height: 15%;
-        top: 0;
-        border-radius: 33px;
-        padding: 1rem;
-        background-color: var(--color-secondary);
-    }
-    
-    .howIam-inside{
-        position: absolute;
-        width: 80%;
-        top: 1%;
-        left: 10%;
-        border-radius: 10px;
-        border: var(--color-tertiary) solid 2px;
-        padding: 1rem;
-        background-color: var(--color-primary);
-    }
-
-}
-
-@media screen and (min-width: 768px){
-    .howIam-container{
-        padding: 1rem;
-        height: 70vh;
-        width: 100vw;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 4rem;
-        position: relative;
-    }
-    
-    .howIam{
-        position: absolute;
-        width: 90%;
-        height: 15%;
-        top: 0;
-        border-radius: 33px;
-        background-color: #8758FF;
-    }
-    
-    .howIam-inside{
-        position: absolute;
-        width: 70%;
-        top: 5%;
-        left: 15%;
-        border-radius: 10px;
-        border: var(--color-tertiary) solid 2px;
-        padding: 1rem;
-        background-color: var(--color-primary);
-        color: var(--color-tertiary);
-    }
-}
-
-.Project-container{
-    width: 70%;
-    height: 100%;
-    min-width: none;
-    min-height: 15rem;
-    margin: 0 auto;
-    border: var(--color-tertiary) solid 2px;
-    border-radius: 10px;
-    padding: 1rem;
-    position: relative;
-}
-.box-styles{
+  .howIam-container {
     width: 100%;
-    height: 100%;
+    height: 25rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  .howIam {
+    position: absolute;
+    width: 95%;
+    height: 15%;
+    top: 0;
+    border-radius: 33px;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+  }
+
+  .howIam-inside {
+    position: absolute;
+    width: 80%;
+    top: 1%;
+    left: 10%;
+    border-radius: 10px;
+    border: var(--color-tertiary) solid 2px;
+    padding: 1rem;
+    background-color: var(--color-primary);
+  }
 }
-.box-header{
-    width: 100%;
-    height: 10%;
+
+@media screen and (min-width: 768px) {
+  .howIam-container {
+    padding: 1rem;
+    height: 70vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    position: relative;
+  }
+
+  .howIam {
+    position: absolute;
+    width: 95%;
+    height: 15%;
+    top: 0;
+    border-radius: 33px;
+    background-color: #8758ff;
+  }
+
+  .howIam-inside {
+    position: absolute;
+    width: 70%;
+    top: 5%;
+    left: 15%;
+    border-radius: 10px;
+    border: var(--color-tertiary) solid 2px;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+  }
 }
-.box-header-item{
-    text-align: center;
+
+.Project-container {
+  width: 100%;
+  height: 100%;
+  min-width: none;
+  min-height: 15rem;
+  margin: 0 auto;
+  position: relative;
 }
-.box-header-item-selected{
-    text-align: center;
-    border-bottom: var(--color-secondary) solid 2px;
-    color: var(--color-quaternary);
+
+.Project-top {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 15%;
+  height: 90%;
+  border-radius: 33px;
+  background-color: var(--color-secondary);
+}
+.Project {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: var(--color-tertiary) solid 2px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+    background-color: var(--color-primary);
+}
+.box-styles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-header-item {
+  text-align: center;
+}
+.box-header-item-selected {
+  text-align: center;
+  border-bottom: var(--color-secondary) solid 2px;
+  color: var(--color-quaternary);
 }
 
 /* *************************for image user************************* */
 
 @media screen and (max-width: 768px) {
-    .img-box{
-        width: 100%;
-        height: 100%;
-        min-width: 15rem;
-        max-width: 15rem;
-        min-height: 15rem;
-        max-height: 15rem;
-        background-color: var(--color-secondary);
-        border-color: var(--color-primary);
-        color: var(--color-tertiary);
-    }
-}
-
-.img-box{
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary);
-}
-    
-.userImage{
+  .img-box {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    min-width: 15rem;
+    max-width: 15rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    background-color: var(--color-secondary);
+    border-color: var(--color-primary);
     color: var(--color-tertiary);
+  }
 }
 
-.shadow-style{
-    box-shadow: 0 0 10px 0 var(--color-primary);
-    transition: 0.5s;
+.img-box {
+  background-color: var(--color-secondary);
+  border-color: var(--color-primary);
 }
-.shadow-style:hover{
-    box-shadow: 0 0 10px 0 var(--color-secondary);
-    transition: 0.5s;
+
+.userImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  color: var(--color-tertiary);
+}
+
+.shadow-style {
+  box-shadow: 0 0 10px 0 var(--color-primary);
+  transition: 0.5s;
+}
+.shadow-style:hover {
+  box-shadow: 0 0 10px 0 var(--color-secondary);
+  transition: 0.5s;
 }
 
 /*  *************************for icons************************* */
-.page-initial i{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    font-size: 50px;
+.page-initial i {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: 50px;
 }
 
-.containerIcon{
-    display: block;
+.containerIcon {
+  display: block;
 }
 
-i{
-    color: var(--color-tertiary);
-    font-size: 30px;
-    margin: 0 10px;
+i {
+  color: var(--color-tertiary);
+  font-size: 30px;
+  margin: 0 10px;
 }
 
 /* *************others************ */
-a{
-    text-decoration: none;
-    color: var(--color-tertiary);
-    font-size: small;
+a {
+  text-decoration: none;
+  color: var(--color-tertiary);
+  font-size: small;
 }
-nav a:hover{
-    color: var(--color-quaternary);
-    border-bottom: 1px solid var(--color-secondary);
-    text-decoration: none;
+nav a:hover {
+  color: var(--color-quaternary);
+  border-bottom: 1px solid var(--color-secondary);
+  text-decoration: none;
 }
 
-h1, nav{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    border-bottom: 10px solid var(--color-secondary);
+h1,
+nav {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  border-bottom: 10px solid var(--color-secondary);
 }
