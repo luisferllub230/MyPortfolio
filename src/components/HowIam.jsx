@@ -24,23 +24,21 @@ const HowIam = () => {
                     </p>
 
                     <div className='row mt-5'>
-                        <div className='col-6 text-center text-md-start'>
+                        <div className=' col-12 text-end'>
                             <a href="https://drive.google.com/file/d/1aJNxs8U3SHXwp8CarNRHO4xqhIGrThCX/view?usp=sharing" target="_black">
-                                <i class="bi bi-file-earmark-person"></i>
+                                <i className="bi bi-file-earmark-person"></i>
                             </a>
-                        </div>
-                        <div className=' col-6 text-end'>
                             <a href="https://www.facebook.com/profile.php?id=100009171501789" target="_blank">
-                                <i class="bi bi-facebook"></i>
+                                <i className="bi bi-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/luisferllub230/" target="_blank">
-                                <i class="bi bi-instagram"></i>
+                            <a href="https://www.instagram.com/alejandro_ferllub/" target="_blank">
+                                <i className="bi bi-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/luis-fernandez-a01289212/" target="_blank">
-                                <i class="bi bi-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/luis-fernandez-lluberes/" target="_blank">
+                                <i className="bi bi-linkedin"></i>
                             </a>
                             <a href="https://wa.me/18296946948?text=Hola,%20vengo%20del%20portafolio" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
+                                <i className="bi bi-whatsapp"></i>
                             </a>
                         </div>
                     </div>
