@@ -45,7 +45,7 @@ const Main = () => {
                     </div>
                     <div className='Project-container'>
                         <div
-                            className='Project-top shadow-style'
+                            className='Project-top'
                         >
                         </div>
                         <Figure

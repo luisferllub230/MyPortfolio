@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react';
 import { motion } from 'framer-motion'
+import iconArrayObject from '../helpers/Icons';
+import IconBackGround from './IconBackGround';
 
 const Accordion = ({ projectFilter }) => {
+
 
     return (
         <Fragment>
@@ -14,7 +17,7 @@ const Accordion = ({ projectFilter }) => {
 
                             <h2 className="accordion-header" id={"panelsStayOpen-heading" + i.id}>
 
-                                <button class={i.id < 2 ? "accordion-button " : "accordion-button collapsed"} style={{ color: "var(--color-secondary)", backgroundColor: "var(--color-primary)" }} type="button" data-bs-toggle="collapse" data-bs-target={"#panelsStayOpen-" + i.id} aria-expanded="true" aria-controls={"panelsStayOpen-" + i.id}> {i.title}</button>
+                                <button className={i.id < 2 ? "accordion-button " : "accordion-button collapsed"} style={{ color: "var(--color-secondary)", backgroundColor: "var(--color-primary)" }} type="button" data-bs-toggle="collapse" data-bs-target={"#panelsStayOpen-" + i.id} aria-expanded="true" aria-controls={"panelsStayOpen-" + i.id}> {i.title}</button>
 
                             </h2>
 
@@ -28,35 +31,87 @@ const Accordion = ({ projectFilter }) => {
                                         transition={{ duration: 1 }}
                                     >
                                         <img src={i.img} alt={i.title} className='box-img-item' />
+
                                     </motion.div>
 
                                     <p className='col-12 pt-5 text-style'>
+
                                         {i.description}
+
                                     </p>
+
+                                    <div className='text-end'>
+
+                                        <a href={i.github} target="_blank">see more in github </a>
+
+                                    </div>
+
                                     <hr />
+
                                     <div className='col-12 text-style'>
+
                                         {
+
                                             i.demo === ""
+
                                                 ?
-                                                <a href={i.github} target="_blank" className='bg-danger m-1 p-1 ps-2 pe-2 rounded-pill'>No deployed</a>
+
+                                                <span className='badge bg-danger m-1 p-1 ps-2 pe-2 rounded-pill'>
+
+                                                    <a href={i.demo} target="_blank" >Not deployed</a>
+
+                                                </span>
+
                                                 :
-                                                <a href={i.demo} target="_blank" className="bg-success m-1 p-1 ps-2 pe-2 rounded-pill"><span>Live demo</span></a>
+
+                                                <span className='badge bg-success m-1 p-1 ps-2 pe-2 rounded-pill'>
+
+                                                    <a href={i.demo} target="_blank" >Live demo</a>
+
+                                                </span>
                                         }
 
-                                        <a href={i.github} target="_blank" className="bg-dark m-1 p-1 ps-2 pe-2 rounded-pill">Github</a>
+                                        <span className='badge bg-dark m-1 p-1 ps-2 pe-2 rounded-pill'>
+
+                                            <a href={i.github} target="_blank">Github</a>
+
+                                        </span>
+                                        
                                     </div>
+
                                     <hr />
+
                                     <div className='col-12 text-style'>
-                                        {
-                                            i.authors.map(a => (
-                                                <a href={a.githubA} target="_blank" className="bg-dark m-1 p-1 ps-2 pe-2 rounded-pill">{a.name}</a>
-                                            ))
-                                        }
-                                    </div>
-                                    <hr />
-                                    <div className='col-12'>
+                                        <p>
+
+                                            <span className='fw-bold'>Authors:</span>
+                                            {
+                                                i.authors.map(a => (
+                                                    <span className='badge bg-dark m-1 p-1 ps-2 pe-2 rounded-pill'><a href={a.githubA} target="_blank" >{a.name}</a></span>
+                                                ))
+                                            }
+
+                                        </p>
 
                                     </div>
+
+                                    <hr />
+
+                                    <div className='col-12 text-style'>
+                                        <p>
+
+                                            <span className='fw-bold'>Technologies:</span>
+
+                                            {
+                                                i.technologies.map(t => (
+                                                    <span className='badge bg-dark m-1 p-1 ps-2 pe-2 rounded-pill'>{t}</span>
+                                                ))
+                                            }
+                                            
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
                             </div>
