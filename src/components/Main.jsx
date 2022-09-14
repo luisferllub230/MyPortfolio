@@ -6,6 +6,7 @@ import IconBackGround from './IconBackGround'
 import Figure from './Figures'
 import HowIam from './HowIam'
 import Project from './Project'
+import { motion } from 'framer-motion'
 
 const Main = () => {
 
@@ -54,10 +55,15 @@ const Main = () => {
                             ObjectStylesFigure1Inside={''}
                             ObjectStylesFigure2Inside={''}
                         />
-                        <div className="Project">
-
-                            <Project />
-                        </div>
+                        <motion.div
+                            className="Project shadow-style"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, x: [-50, 0] }}
+                            viewport={{ once: true }}   
+                        >
+                            <Project
+                            />
+                        </motion.div>
                     </div>
                 </div>
             </section>

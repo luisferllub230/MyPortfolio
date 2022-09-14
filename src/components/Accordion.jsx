@@ -17,17 +17,16 @@ const Accordion = ({ projectFilter }) => {
 
                             <h2 className="accordion-header" id={"panelsStayOpen-heading" + i.id}>
 
-                                <button className={i.id < 2 ? "accordion-button " : "accordion-button collapsed"} style={{ color: "var(--color-secondary)", backgroundColor: "var(--color-primary)" }} type="button" data-bs-toggle="collapse" data-bs-target={"#panelsStayOpen-" + i.id} aria-expanded="true" aria-controls={"panelsStayOpen-" + i.id}> {i.title}</button>
+                                <button className="accordion-button collapsed" style={{ color: "var(--color-secondary)", backgroundColor: "var(--color-primary)" }} type="button" data-bs-toggle="collapse" data-bs-target={"#panelsStayOpen-" + i.id} aria-expanded="true" aria-controls={"panelsStayOpen-" + i.id}> {i.title}</button>
 
                             </h2>
 
-                            <div id={"panelsStayOpen-" + i.id} class={i.id < 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} aria-labelledby={"panelsStayOpen-heading" + i.id}>
+                            <div id={"panelsStayOpen-" + i.id} class="accordion-collapse collapse" aria-labelledby={"panelsStayOpen-heading" + i.id}>
 
                                 <div className="accordion-body" >
                                     <motion.div
-                                        className='box-img'
-                                        whileHover={{ scale: 1.1 }}
-                                        whileTap={{ scale: 1.5 }}
+                                        className='box-img' 
+                                        whileTap={{ scale: [1, 0.9] }}
                                         transition={{ duration: 1 }}
                                     >
                                         <img src={i.img} alt={i.title} className='box-img-item' />
@@ -76,7 +75,7 @@ const Accordion = ({ projectFilter }) => {
                                             <a href={i.github} target="_blank">Github</a>
 
                                         </span>
-                                        
+
                                     </div>
 
                                     <hr />
@@ -85,6 +84,7 @@ const Accordion = ({ projectFilter }) => {
                                         <p>
 
                                             <span className='fw-bold'>Authors:</span>
+                                            <br />
                                             {
                                                 i.authors.map(a => (
                                                     <span className='badge bg-dark m-1 p-1 ps-2 pe-2 rounded-pill'><a href={a.githubA} target="_blank" >{a.name}</a></span>
@@ -101,13 +101,13 @@ const Accordion = ({ projectFilter }) => {
                                         <p>
 
                                             <span className='fw-bold'>Technologies:</span>
-
+                                            <br />
                                             {
                                                 i.technologies.map(t => (
                                                     <span className='badge bg-dark m-1 p-1 ps-2 pe-2 rounded-pill'>{t}</span>
                                                 ))
                                             }
-                                            
+
                                         </p>
 
                                     </div>

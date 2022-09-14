@@ -21,7 +21,7 @@ const Project = () => {
 
     return (
         <Fragment>
-            <div className=' col-12  row box-styles m-0 p-0 shadow-style'>
+            <div className=' col-12  row box-styles m-0 p-0'>
                 <div className="col-12 col-md-12 box-header">
                     <motion.div
                         onClick={() => setSelect([true, false, false])}
@@ -30,7 +30,7 @@ const Project = () => {
                         style={{ cursor: 'pointer' }}
                         transition={{ duration: 1 }}
                     >
-                        Express
+                        Node js
                     </motion.div>
                     <motion.div
                         onClick={() => setSelect([false, true, false])}
@@ -50,18 +50,14 @@ const Project = () => {
                     >
                         .Net
                     </motion.div>
-
                 </div>
-                <motion.div
+                <div
                     className="row col-12 col-md-12 box-content"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1, x: [-50, 0] }}
-                    viewport={{ once: true }}
                 >
                     <Accordion
                         projectFilter={projectFilter}
                     />
-                </motion.div>
+                </div>
             </div>
         </Fragment>
     );
