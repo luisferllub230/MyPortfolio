@@ -6,25 +6,23 @@ import Type from 'react-typed'
 const HowIam = () => {
     return (
         <Fragment>
-            <div className='howIam'></div>
             <motion.div
-                className='howIam-inside'
+                className='col-12 col-md-6 border border-2 border-white rounded-styles p-3 ms-0 ms-md-5 shadow-style'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, y: [50, 0] }}
                 viewport={{ once: true}}
             >
                 <div className=''>
-                    <h1 className='text-center'>How I am?</h1>
+                    <h1 className='text-center pt-2 pb-3 border-bottom border-5 '>who I am?</h1>
                     <p className='text-start mt-5'>
                         <Type
-                            className='text-center'
                             strings={['Hi im Luis Alejandro Fernandez Lluberes.<br/><br/> Im a Junior Software Developer, i like to learn new things and i like to work in a team. at the moment im learning Web Development and i want to be a Full Stack Developer.']}
                             typeSpeed={50}
                         />
                     </p>
 
-                    <div className='row mt-5'>
-                        <div className=' col-12 text-end'>
+                    <div className='text-end mt-5'>
+                        <div className=''>
                             <a href="https://drive.google.com/file/d/1aJNxs8U3SHXwp8CarNRHO4xqhIGrThCX/view?usp=sharing" target="_black">
                                 <i className="bi bi-file-earmark-person"></i>
                             </a>

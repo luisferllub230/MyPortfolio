@@ -11,13 +11,12 @@ function App() {
 
         />
       </header>
-      <main className="container">
+      <main className="container-fluid">
         <Main
 
         />
       </main>
       <footer>
-      <a target="_blank" href="https://icons8.com/icon/118484/facebook-nuevo">Facebook Nuevo icon by Icons8</a>
       </footer>
     </div>
   )

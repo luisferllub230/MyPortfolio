@@ -3,13 +3,10 @@ import React, { Fragment, useState } from 'react'
 
 const Header = () => {
 
-    const [active, setActive] = useState([false, false, false, false]);
-
-
     return (
         <Fragment>
             <section>
-                <nav className="navbar navbar-expand-lg navbar-dark">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-5 mb-0">
                     <div className="container-fluid">
                         <a
                             className="navbar-brand text-light fs-3 fw-bolder"
