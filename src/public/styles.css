@@ -115,3 +115,23 @@ nav a:hover {
 h1{
   border-bottom: var(--color-secondary) solid 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .img-responsive{
+    /* image responsive cover */
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-responsive{
+    /* image responsive cover */
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+}
+  
+  
