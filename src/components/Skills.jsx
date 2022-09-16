@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import Icons from '../helpers/Icons'
+import { motion } from 'framer-motion'
 
 const Skills = () => {
 
@@ -11,27 +12,37 @@ const Skills = () => {
 
     return (
         <Fragment>
-            <div className=" shadow-style col-12 col-md-10 border border-2 border-white rounded-styles p-3 me-0 me-md-5 ">
+            <motion.div
+                className=" shadow-style col-12 col-md-8 border-total-style rounded-styles p-3 "
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, y: [-50, 0] }}
+                viewport={{ once: true }}
+            >
                 <div className="">
-                    <h1 className="text-center pt-2 pb-3 border-bottom border-5 ">Skills</h1>
+                    <h1 className="text-center pt-2 pb-3">Skills</h1>
                     <div className="row">
 
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 mt-5">
                             <div className="row">
 
-                                <div className="col-12">
+                                <div className="col-12" id='skill'>
                                     <h3 className="text-center">Frontend</h3>
                                 </div>
                                 <div className="col-12">
 
-                                    <ul className="list-group">
+                                    <ul className="list-group ">
 
 
 
                                         {
                                             Frontend.map(i => (
 
-                                                <li className="list-group-item bg-dark text-white">
+                                                <motion.li
+                                                    className="list-group-item bg-dark text-white"
+                                                    initial={{ opacity: 0 }}
+                                                    whileInView={{ opacity: 1, x: [-50, 0] }}
+                                                    viewport={{ once: true }}
+                                                >
                                                     <i
                                                         className={i.class}
                                                         style={i.style}
@@ -47,7 +58,7 @@ const Skills = () => {
                                                         ></div>
                                                     </div>
                                                     <hr style={{ color: i.style.color }} />
-                                                </li>
+                                                </motion.li>
                                             ))
                                         }
 
@@ -60,7 +71,7 @@ const Skills = () => {
 
                         <div className="col-12 col-md-6 mt-2 mt-md-0">
 
-                            <div className="row">
+                            <div className="row mt-5">
                                 <div className="col-12">
                                     <h3 className="text-center">Backend</h3>
                                 </div>
@@ -70,7 +81,11 @@ const Skills = () => {
                                         {
                                             Backend.map(i => (
 
-                                                <li className="list-group-item bg-dark text-white">
+                                                <motion.li
+                                                    initial={{ opacity: 0 }}
+                                                    whileInView={{ opacity: 1, x: [50, 0] }}
+                                                    viewport={{ once: true }}
+                                                    className="list-group-item bg-dark text-white">
                                                     <i
                                                         className={i.class}
                                                         style={i.style}
@@ -86,7 +101,7 @@ const Skills = () => {
                                                         ></div>
                                                     </div>
                                                     <hr style={{ color: i.style.color }} />
-                                                </li>
+                                                </motion.li>
                                             ))
                                         }
 
@@ -98,7 +113,7 @@ const Skills = () => {
 
                         <div className="col-12 col-md-6 mt-2">
 
-                            <div className="row">
+                            <div className="row mt-5">
                                 <div className="col-12">
                                     <h3 className="text-center">DataBase</h3>
                                 </div>
@@ -108,7 +123,11 @@ const Skills = () => {
                                         {
                                             Database.map(i => (
 
-                                                <li className="list-group-item bg-dark text-white">
+                                                <motion.li
+                                                    initial={{ opacity: 0 }}
+                                                    whileInView={{ opacity: 1, x: [-50, 0] }}
+                                                    viewport={{ once: true }}
+                                                    className="list-group-item bg-dark text-white">
                                                     <i
                                                         className={i.class}
                                                         style={i.style}
@@ -124,7 +143,7 @@ const Skills = () => {
                                                         ></div>
                                                     </div>
                                                     <hr style={{ color: i.style.color }} />
-                                                </li>
+                                                </motion.li>
                                             ))
                                         }
 
@@ -137,7 +156,7 @@ const Skills = () => {
 
                         <div className="col-12 col-md-6 mt-2">
 
-                            <div className="row">
+                            <div className="row mt-5">
                                 <div className="col-12">
                                     <h3 className="text-center">Others Technologies</h3>
                                 </div>
@@ -147,7 +166,12 @@ const Skills = () => {
                                         {
                                             Others.map(i => (
 
-                                                <li className="list-group-item bg-dark text-white">
+                                                <motion.li
+                                                    className="list-group-item bg-dark text-white"
+                                                    initial={{ opacity: 0 }}
+                                                    whileInView={{ opacity: 1, x: [50, 0] }}
+                                                    viewport={{ once: true }}
+                                                >
                                                     <i
                                                         className={i.class}
                                                         style={i.style}
@@ -163,7 +187,7 @@ const Skills = () => {
                                                         ></div>
                                                     </div>
                                                     <hr style={{ color: i.style.color }} />
-                                                </li>
+                                                </motion.li>
                                             ))
                                         }
 
@@ -175,7 +199,7 @@ const Skills = () => {
 
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </Fragment>
     );
 }

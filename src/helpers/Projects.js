@@ -20,7 +20,7 @@ const ObjectProject =
             github: 'https://github.com/luisferllub230/Periodic-Table#this-app-displays-the-periodic-table-and-its-use-server-side-rendering-to-display-the-table-if-one-of-the-elements-is-not-in-the-array-the-table-displays-a-box-with-a-404-text-and-change-the-box-background-for-a-gray-color',
             authors: [{name: "Luis Fernandez", githubA: "https://github.com/luisferllub230"}],
             Classification: 'Express',
-            technologies: ['Html', 'CSS grip', 'Nodejs', 'Express'],
+            technologies: ['Html', 'CSS grip', 'Nodejs', 'Express', 'handlebars'],
         },
         {
             id: 3,
@@ -37,10 +37,10 @@ const ObjectProject =
         {
             id: 4,
             title: 'My-portfolio',
-            img: '',
-            description: '...',
+            img: 'https://user-images.githubusercontent.com/84060723/190549584-b17981fe-5e5d-4670-9b2a-06f7230858cd.png',
+            description: 'this is my personal portfolio, i use react and others packages for animations...',
             demo: '',
-            github: '',
+            github: 'https://github.com/luisferllub230/MyPortfolio/tree/main',
             authors: [{name: "Luis Fernandez", githubA: "https://github.com/luisferllub230"}],
             Classification: 'React',
             technologies: ['Html', 'CSS', 'React', 'Bootstrap', 'framer motion'],
@@ -50,7 +50,7 @@ const ObjectProject =
             title: 'budget-manager',
             img: 'https://user-images.githubusercontent.com/84060723/189042218-7bdcd5be-6794-4b5a-8239-9d2fd229e38d.png',
             description: 'A simple budget-manager created in react...',
-            demo: 'https://splendid-stardust-9b0405.netlify.app/',
+            demo: '',
             github: 'https://github.com/luisferllub230/budget-manager',
             authors: [{name: "Luis Fernandez", githubA: "https://github.com/luisferllub230"}],
             Classification: 'React',
@@ -66,7 +66,17 @@ const ObjectProject =
             authors: [{name: "Luis Fernandez", githubA: "https://github.com/luisferllub230"}],
             Classification: 'React',
             technologies: ['Html', 'CSS', 'React', 'Bootstrap'],
+        },
+        {
+            id: 7,
+            title: 'Software-Nomina',
+            img: 'https://user-images.githubusercontent.com/84060723/166086322-eeedd258-74c1-4db7-a98d-63f06b202293.png',
+            description: 'Este proyecto es para un sistema de nominas...',
+            demo: '',
+            github: 'https://github.com/luisferllub230/SotfwareNomina4.0',
+            authors: [{name: "Luis Fernandez", githubA: "https://github.com/luisferllub230"},{name: "LUIS ALEXANDER", githubA: "https://github.com/Alexanderxl"}, {name: 'LUIS DAVID', githubA: 'https://github.com/N1ZIRO'}, {name: 'SCARLETTE DIAZ', githubA: 'https://github.com/Scarlette-Tr'}],
+            Classification: '.Net',
+            technologies: ['C#', 'SQL Server', 'Entity Framework', 'ASP.NET Web App MVC5','MVC', 'html', 'css', 'bootstrap'],
         }
     ]
-
 export default ObjectProject;

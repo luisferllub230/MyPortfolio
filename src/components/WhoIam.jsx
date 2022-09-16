@@ -7,16 +7,16 @@ const HowIam = () => {
     return (
         <Fragment>
             <motion.div
-                className='col-12 col-md-6 border border-2 border-white rounded-styles p-3 ms-0 ms-md-5 shadow-style'
+                className='col-12 col-md-8 border-total-style rounded-styles p-3 shadow-style'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, y: [50, 0] }}
                 viewport={{ once: true}}
             >
                 <div className=''>
-                    <h1 className='text-center pt-2 pb-3 border-bottom border-5 '>who I am?</h1>
+                    <h1 className='text-center pt-2 pb-3 '>who I am?</h1>
                     <p className='text-start mt-5'>
                         <Type
-                            strings={['Hi im Luis Alejandro Fernandez Lluberes.<br/><br/> Im a Junior Software Developer, i like to learn new things and i like to work in a team. at the moment im learning Web Development and i want to be a Full Stack Developer.']}
+                            strings={['Hi im Luis Alejandro Fernandez Lluberes.<br/><br/> Im a Junior Software Developer, i like to learn new things and i like to work in a team. at the moment im learning react by my selfs and software development in the Institute Technological of America (ITLA), in the future i want to be a full stack developer.']}
                             typeSpeed={50}
                         />
                     </p>

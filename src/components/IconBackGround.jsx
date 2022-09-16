@@ -5,7 +5,12 @@ import iconArrayObject from '../helpers/Icons';
 const IconBackGround = () => {
     return (
         <Fragment>
-            <div className='containerIcon'>
+            <motion.div 
+            className='containerIcon'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [-800, 0] }}
+            transition={{ duration: 4 }}
+            >
                 {
                     iconArrayObject.map((icon) => (
                         <motion.i
@@ -18,7 +23,7 @@ const IconBackGround = () => {
                         ></motion.i>
                     ))
                 }
-            </div>
+            </motion.div>
         </Fragment>
     );
 }

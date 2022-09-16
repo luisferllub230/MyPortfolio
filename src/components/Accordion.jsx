@@ -29,7 +29,7 @@ const Accordion = ({ projectFilter }) => {
                                         whileTap={{ scale: [1, 0.9] }}
                                         transition={{ duration: 1 }}
                                     >
-                                        <img src={i.img} alt={i.title} className='box-img-item' />
+                                        <img src={i.img} alt={i.title} className='img-fluid' />
 
                                     </motion.div>
 

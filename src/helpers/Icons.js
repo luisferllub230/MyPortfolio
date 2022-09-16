@@ -4,7 +4,7 @@ const iconArrayObject = [
         class: "devicon-react-original-wordmark",
         style: { fontSize: "3rem", color: "#61dafb" },
         Skill: "Frontend",
-        withBar: "49%"
+        withBar: "49%",
     },
     {
         nameIcon: "Nodejs",
@@ -115,8 +115,8 @@ const iconArrayObject = [
         nameIcon: "Sequelize",
         class: "devicon-sequelize-plain-wordmark",
         style: { fontSize: "3rem", color: "#52b0e7" },
-        Skill: "Others",
-        withBar: "70%"
+        Skill: "others",
+        withBar: "80%"
     }
 ]
 

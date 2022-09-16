@@ -21,8 +21,13 @@ const Project = () => {
 
     return (
         <Fragment>
-            <div className=' col-12  row box-styles m-0 p-0'>
-                <div className="col-12 col-md-12 box-header">
+            <div className='row col-12 col-md-8 border-total-style rounded-styles shadow-style'>
+
+                <div className="col-12">
+                    <h1 className=' mx-auto col-12 text-center pt-2 pb-3 '>My principal Projects</h1>
+                </div>
+
+                <div className="row col-12 col-md-12 p-3 box-header d-flex text-center text-nowrap mx-auto">
                     <motion.div
                         onClick={() => setSelect([true, false, false])}
                         className={"col-4 box-header-item" + (select[0] ? " box-header-item-selected" : "")}
@@ -52,7 +57,7 @@ const Project = () => {
                     </motion.div>
                 </div>
                 <div
-                    className="row col-12 col-md-12 box-content"
+                    className="col-12 p-2"
                 >
                     <Accordion
                         projectFilter={projectFilter}
